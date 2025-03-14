@@ -2,6 +2,7 @@ package game_interface;
 import java.util.Scanner;
 import character.Characteritics;
 import character.Clase;
+import game_interface.Map;
 
 public class initialMenu {
 
@@ -84,9 +85,11 @@ public class initialMenu {
     }
 
     private void Game() {
+        Map map = new Map();
         boolean derrota = false;
         while (!derrota) {
-
+            map.showMap(1);
+            derrota = true;
         }
     }
 }
